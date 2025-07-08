@@ -2,15 +2,23 @@
 
 A fully responsive and modern **food ordering web application** inspired by **Foodpanda**, built using **React.js**, featuring dynamic restaurant menus, cart functionality, routing, and a sleek UI.
 
+---
+
 ## 🚀 Live Demo
 
-🔗 [View Live App](https://your-deployed-link.com)
+🔗 [View Live App](https://food-panda-clone-theta.vercel.app/)
+
+> ⚠️ **Important Note (CORS Warning):**  
+> This app uses Swiggy's internal API, which blocks frontend requests (CORS issue).  
+> To view restaurant and menu data:
+> - Please enable a [CORS Unblocker browser extension (Chrome)](https://chrome.google.com/webstore/detail/cors-unblock/ibljgedmbfijodgfhiafcooaipmjdnfg).
+> - Without it, the app UI loads, but data may not appear.
 
 ---
 
 ## 📸 Screenshots
 
-> Replace the paths below with real screenshots from your project
+> _Replace the paths below with real screenshots from your project if available_
 
 ![Homepage](./screenshots/home.png)
 ![Restaurant Menu](./screenshots/menu.png)
@@ -20,28 +28,37 @@ A fully responsive and modern **food ordering web application** inspired by **Fo
 
 ## 🛠 Tech Stack
 
-- ⚛️ **React.js** (with Functional Components & Hooks)
+- ⚛️ **React.js** – Functional Components, Hooks
 - 🧭 **React Router DOM** – Client-side routing
-- 📦 **Context API / Redux Toolkit** – State management
-- 💅 **Tailwind CSS** – Styling
-- 🔃 **Custom Hooks** – Reusable logic
-- 🐢 **Shimmer Loading UI** – For better UX
+- 📦 **Context API / Redux Toolkit** – Global state management
+- 💅 **Tailwind CSS** – Utility-first responsive styling
+- 🐢 **Shimmer UI** – Better loading experience
+- 🔁 **Custom Hooks** – Reusable business logic
 - 🧱 **Dynamic Routing** – Based on restaurant ID
-- 🌐 **Mock API / Swiggy API** – For real-like data
-- 📦 **Code Splitting & Lazy Loading** – Performance optimization
+- 🌐 **Swiggy API (from DevTools)** – Real-like restaurant/menu data
+- ⚙️ **Vite** – Lightning-fast development
 
 ---
 
 ## 🎯 Features
 
-- ✅ Browse nearby restaurants
-- ✅ View dynamic menu by restaurant
-- ✅ Add and remove items from cart
-- ✅ Real-time cart item counter
-- ✅ Responsive design (mobile & desktop)
+- ✅ Browse nearby restaurants (live data)
+- ✅ View menus by restaurant
+- ✅ Add/remove items to/from cart
+- ✅ Real-time cart badge update
+- ✅ Fully responsive design
 - ✅ Loading skeletons with shimmer effect
 - ✅ Search restaurants by name
-- ✅ Error handling and fallback UI
-- ✅ Clean, component-based structure
+- ✅ Graceful error handling
+- ✅ Clean, reusable component structure
+- ✅ Code splitting and lazy loading
 
 ---
+
+## 📦 Getting Started (Local Setup)
+
+```bash
+git clone https://github.com/your-username/food-panda-clone.git
+cd food-panda-clone
+npm install
+npm run dev
